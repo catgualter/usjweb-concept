@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--CAT & LUIS -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>USJ Macau - University of Saint Joseph</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/news.css" rel="stylesheet">
+    <link href="assets/css/quick.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/js/fancybox/jquery.fancybox.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Lora|Bitter|Didact+Gothic|Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
+    <style>
+        @media (min-width: 768px) {
+            .modal-dialog {
+                width: auto !important;
+                margin: 30px auto;
+            }
+            @media (min-width: 991px) {
+                .modal-dialog {
+                    width: 600px !important;
+                    margin: 30px auto;
+                }
+    </style>
+    <style>
+        .scrollup {
+            width: 40px;
+            height: 40px;
+            opacity: 0.3;
+            position: fixed;
+            bottom: 10%;
+            right: 5px;
+            display: none;
+            color: #000000;
+        }
+    </style>
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#theMenu">
+    <section id="home"></section>
+    <div class="internship">
+        <div class="container">
+            <ul class="social hidden-xs" style="top:85px;">
+                <li>
+                    <a href="https://twitter.com/USJMacau" class="tw" title="Follow us on Twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/USJnews" class="fb" title="Check out our FB">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/+UsjEduMousjmacau/" class="gp" title="Follow us on Google+">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.flickr.com/photos/usjmacau/" class="fk" title="Browse our Flickr!">
+                        <i class="fa fa-flickr"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="row">
+                <div class="col-md-12 visible-xs">
+                    <div class="panel-group" id="accordion2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+					        <a data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+					         Browse..
+					        </a>
+					      </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="nav">
+                                        <li><a href="#partner" data-toggle="modal" data-target="#partners">Our Partners</a>
+                                        </li>
+                                        <li><a href="#careerday" data-toggle="modal" data-target="#career">Career Day</a>
+                                        </li>
+                                        <li><a href="#workshop" data-toggle="modal" data-target="#ws">Workshop & Seminars</a>
+                                        </li>
+                                        <li><a href="#portfolio" data-toggle="modal" data-target="#portfolio">Career Portfolio</a>
+                                        </li>
+                                        <li>
+                                            <a href="#ip" data-toggle="modal" data-target="#jobs" Job & Internship Programs</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-12">
+                    <ul class="nav nav-pills hidden-xs">
+                        <li><a href="#partner" data-toggle="modal" data-target="#partners">Our Partners</a>
+                        </li>
+                        <li><a href="#careerday" data-toggle="modal" data-target="#career">Career Day</a>
+                        </li>
+                        <li><a href="#workshop" data-toggle="modal" data-target="#ws">Workshop & Seminars</a>
+                        </li>
+                        <li><a href="#portfolio" data-toggle="modal" data-target="#portfolio">Career Portfolio</a>
+                        </li>
+                        <li><a href="#ip" data-toggle="modal" data-target="#jobs">Job & Internship Programs</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="wrapper">
+        <div class="navbar navbar-fixed-top non-home" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo2013.png" style="width:75%;margin-top: -15px;" id="logo_img">
+                    </a>
+                </div>
+            </div>
+            <nav class="menu" id="theMenu">
+                <div class="menu-wrap">
+                    <h1 class="logo"><a href="index.html#home">USJ Macau</a></h1>
+
+                    <!-- <i class="fa fa-times menu-close"></i> -->
+                    <a class="search-wrap">
+                        <label for="search" class="search-toggle-label">
+                            <i class="fa fa-search fa-2x" style="color:#fff"></i>
+                            <input type="text" id="search" placeholder="SEARCH" name="keywords" class="search" />
+                        </label>
+
+                    </a>
+
+                    <a href="index.html" class="smoothScroll">Home</a>
+                    <a href="index.html#news" class="smoothScroll">News & Events</a>
+                    <a href="about.html" class="smoothScroll">About</a>
+                    <a href="programs.html" class="smoothScroll">Programs</a>
+                    <a href="studentlife.html" class="smoothScroll">Students</a>
+                    <a href="interncareer.html" class="smoothScroll">Internships and Career</a>
+                    <!--                    <a href="#scholarship" class="smoothScroll">Scholarship</a>-->
+                    <a href="#contact" class="smoothScroll">Contact</a>
+
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-flickr"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+
+
+                    <a style="margin-right: 10px;">
+
+                        <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#start">
+                            START
+                        </button>
+
+                    </a>
+
+                </div>
+        </div>
+
+
+
+        </nav>
+        <div class="modal fade" id="start" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Start</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Choose...</h3>
+                        <p>
+                            USJ Website: <a href="http://www.usj.edu.mo/">http://www.usj.edu.mo/ </a>
+                        </p>
+                        <p>
+                            USJ Email: <a href="http://mail.usj.edu.mo/">http://mail.usj.edu.mo/</a>
+                        </p>
+                        <p>
+                            MyUSJ: <a href="https://my.usj.edu.mo/">https://my.usj.edu.mo/</a>
+                        </p>
+                        <p>
+                            Hub: <a href="http://hub.usj.edu.mo/">http://hub.usj.edu.mo/</a>
+                        </p>
+                        <p>
+                            Library:&nbsp;<a href="https://sites.google.com/a/usj.edu.mo/usj-library/" target="_blank">https://sites.google.com/a/usj.edu.mo/usj-library/</a>
+                        </p>
+                        <p>
+                            Guidelines and Forms: <a href="https://drive.google.com/a/usj.edu.mo/folderview?id=0B1E8wNOJgEFcZnRyYTNCbjN4dk0&amp;usp=sharing" target="_blank">https://drive.google.com/...</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu button -->
+        <div id="menuToggle">MENU <i class="fa fa-bars"></i>
+        </div>
+    </div>
+    </div>
+    <div id="board">
+        <div class="container" style="margin-top: 10px;">
+
+            <div class="col-md-8" style="border-right: 3px solid #7e2390;">
+                <div class="page-header">
+                    <img src="assets/img/intern.jpg" class="img-responsive" alt="">
+                    <h2>Welcome!</h2>
+                </div>
+                <p class="text-justify">Thank you for stopping by! This site welcomes students, alumni, employers and anyone interested to share news and views on jobs and internships for USJ students. The Career Office serves as a resource centre to prepare students adequately for entry into the workforce, and to enable employers to identify and recruit suitable personnel.</p>
+
+                <br>
+
+                <p class="text-justify">We cordially invite employers and other industry partners to contact us about their job and internship opportunities, workshops and seminars suitable for self- and career-development, and news about the employment situation in Macau and beyond. Most of all, we encourage students to visit us for a chat about your internship and career interests, and your plans for your future. We look forward to supporting your ambitions with the resources that the USJ and its partners can pool together through our various collaboration programmes.
+
+                    <br>
+
+                    <p>If you would like to provide <span class="j41x0q5" id="j41x0q5_3">job opportunities</span> for our students, please click here --&gt;&nbsp;<a href="https://docs.google.com/forms/d/19IOhCwLy_4M6tfh-ndeQgGt1AroW3m1dMJW_lWpDDTk/viewform">form</a>
+                        </strong>
+
+                        <hr>
+            </div>
+            <div class="col-md-4">
+                <div class="page-header">
+                    <h2 class="text-success">Contact Us:</h2>
+                </div>
+                <p class="text-justify">
+
+                    Internship and Career Office (ICO)
+                    <br>University of Saint Joseph
+                    <br>Rua de Londres, No.16 NAPE, Macau, China.
+                    <br>Email: careercentre@usj.edu.mo
+                    <br>
+                    <hr>Prof. Soo May Cheng
+                    <br>Director of ICO
+                    <br>Office number: 8796 4489
+                    <hr>
+                    <br>Tracy Cheong
+                    <br>Administrative Assistant
+                    <br>Office number: 8796 4490</p>
+                <hr>
+                <div class="panel-group" id="accordion">
+
+                </div>
+                <div class="panel-group" id="accordion2">
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="modal fade" id="career" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Career Day</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/img/career.jpg" class="img-responsive" />
+                    <h3><em>Aims:</em></h3>
+                    <p>
+                        1. To help connect students with the business world</p>
+                    <p>
+                        2. To offer students an insight into the potential jobs and careers available in Macau</p>
+                    <p>
+                        3. To give employers an opportunity to meet with our staff and students in a relaxed and intimate environment</p>
+                    <p>
+                        4. Introduce work experience placements to students over the summer period</p>
+                    <p>
+                        <strong>Apply for the upcoming Career Day 2015?</strong>
+                    </p>
+                    <p>
+                        New partners are always welcome.&nbsp;</p>
+                    <p>
+                        Please fill in the form and send to <a href="mailto:careercentre@usj.edu.mo" class="a-email-749600471">careercentre@usj.edu.mo</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ws" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Workshops and Seminars</h4>
+                </div>
+                <div class="modal-body">
+                    <h3>Workshops and Seminars</h3>
+                    <p class="text-justify">
+                        Guest speakers from industry, academia and government sectors are most welcome to share their insights and experience with USJ students through the Career Centre's series of workshops and seminars. &nbsp;Such sharing is intended to help our students to take stock of their career interests, skills and knowledge that will enable their whole-person development beyond their discipline-specific education. Specifically, the workshops and seminars:</p>
+                    <ul>
+                        <li>
+                            equip students with a realistic understanding of the employment opportunities in Macau and the region</li>
+                        <li>
+                            prepare students for job search and entry into the job market</li>
+                        <li>
+                            give an orientation into entrepreneurship and starting a small business&nbsp;</li>
+                        <li>
+                            introduce opportunities for further education beyond the Licentiate programmes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="portfolio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Career Portfolio Programme</h4>
+                </div>
+                <div class="modal-body">
+                    <h3>
+	Career Portfolio Programme</h3>
+                    <p>
+                        The Portfolio Programme under the Career Centre is a specially tailored series of activities to assist students to:</p>
+                    <p>
+                        1. understand potential career opportunities</p>
+                    <p>
+                        2. reflect on their short term and intermediate career goals</p>
+                    <p>
+                        3. develop a career plan</p>
+                    <p>
+                        In each semester, students should:</p>
+                    <p>
+                        •&nbsp;&nbsp;&nbsp; create and maintain tools such as CVs and, where relevant, specialized components of a work portfolio to submit to potential employers</p>
+                    <p>
+                        •&nbsp;&nbsp;&nbsp; develop social networking and interview skills to promote themselves to their best advantage to prospective employers</p>
+                    <p>
+                        Such tools and preparations will remain useful for our young graduates as they journey towards their dream careers!&nbsp;</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="jobs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Jobs and Internship</h4>
+                </div>
+                <div class="modal-body">
+
+
+
+                    <h3>
+	Full-time/Part-time Jobs</h3>
+                    <p>
+                        USJ students and graduates can offer prospective employers a range of academic knowledge and professional skills. Our pre-university, licentiate, masters and doctoral programmes prepare graduates for careers in many sectors ranging from Business and Government to Architecture, Design and Counseling. Students may also be able to take up part-time jobs to enhance their work experience. For the full range of USJ programmes, click <strong><span style="font-size:     16px;"><a href="programs.html">here</a></span></strong>.</p>
+                    <p>
+                        Employers are welcome to post their recruitment notices on our Career Office website by completing this <strong><span style="font-size:     16px;"><a href="https://docs.google.com/forms/d/19IOhCwLy_4M6tfh-ndeQgGt1AroW3m1dMJW_lWpDDTk/viewform">form</a></span></strong>.</p>
+                    <h3>
+	&nbsp;</h3>
+                    <h3>
+	Internship Programme</h3>
+                    <p>
+                        The internship programme consists of a series of agreements with organizations in Macau to give students the opportunity to practise their skills and utilise the knowledge that they have gained through their courses. The aim is to have the students undertake full-time or part-time work experience during summer breaks or through the academic year. &nbsp;These programmes are adjusted to suit the requirements of individual employers and students.</p>
+                    <p>
+                        Through our Career Office surveys we know that students are keen to improve their skills and knowledge and to develop strong working relationships. We also understand that companies that offer meaningful tasks, feedback, learning opportunities, supervisor support and a great environment make the best internship partners.</p>
+                    <p>
+                        Work experience is not limited to local organizations. Through our partnerships with development agencies we are able to offer positions overseas to those students who are unable to work locally.</p>
+                    <p>
+                        Please submit this<span style="font-size:   16px;"><strong> <a href="https://docs.google.com/forms/d/19IOhCwLy_4M6tfh-ndeQgGt1AroW3m1dMJW_lWpDDTk/viewform">form</a></strong></span> or contact the Career Office at careercentre@usj.edu.mo to register your interest in offering internship places.&nbsp;</p>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="partners" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Our Partners</h4>
+                </div>
+                <div class="modal-body">
+                    <h3>Our Partners</h3>
+
+                    <p>We appreciate the career and internship opportunities that the Macau Government and commercial and non-profit organisations offer to our students and graduates. These organisations are also valuable resources to share their experience, expectations and advice with the USJ community. On this page, we honour these organisations. New partners are always welcome. Please contact: <a>careercentre@usj.edu.mo</a>.</p>
+
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="http://usj.edu.mo/uploads/media_items/image002.original.gif" class="img-responsive">
+                            </div>
+                            <div class="col-md-3">
+                                <img src="http://usj.edu.mo/uploads/media_items/bnu-1.original.png" class="img-responsive">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="http://usj.edu.mo/uploads/media_items/boc.original.png" class="img-responsive">
+                            </div>
+                            <div class="col-md-3">
+                                <img src="http://usj.edu.mo/uploads/media_items/buterfly.original.png" class="img-responsive">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="http://usj.edu.mo/uploads/media_items/cesl.original.png" class="img-responsive">
+                            </div>
+                            <div class="col-md-3">
+                                <img src="http://usj.edu.mo/uploads/media_items/countryfoods.original.png" class="img-responsive">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="http://usj.edu.mo/uploads/media_items/ctm-1.original.png" class="img-responsive">
+                            </div>
+                            <div class="col-md-3">
+                                <img src="http://usj.edu.mo/uploads/media_items/deltasia.original.png" class="img-responsive">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="http://usj.edu.mo/uploads/media_items/dfs.original.png" class="img-responsive">
+                            </div>
+                            <div class="col-md-3">
+                                <img src="http://usj.edu.mo/uploads/media_items/dss.original.png" class="img-responsive">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="http://usj.edu.mo/uploads/media_items/franco.original.png" class="img-responsive">
+                            </div>
+                            <div class="col-md-3">
+                                <img src="http://usj.edu.mo/uploads/media_items/galaxy.original.png" class="img-responsive">
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="contact" name="contact"></section>
+    <div id="contactwrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>Contact Us</h3>
+
+                    <p>
+                        <small>Rua de Londres 16 (NAPE)</br>
+						Macau, China</br>
+						澳門外港新填海區倫敦街16號 (環宇豪庭)</br>
+						</small>
+                    </p>
+                    <p>
+                        <small>Telephone No: +853 87964400<br/>
+						Fax No: +853 28725517</br>
+						</small>
+                    </p>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+					        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+					         Other Departments
+					        </a>
+					      </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse">
+                                <div class="panel-body" style="background: #000;">
+                                    <p>
+                                        <small><u>Human Resources</u></br>
+								hr@usj.edu.mo</br>
+								</small>
+                                    </p>
+                                    <p>
+                                        <small>
+								<u>Public Relations</u></br>
+								Email: pr@usj.edu.mo</br>
+								</small>
+                                    </p>
+                                    <p>
+                                        <small>
+								<u>Main Office</u></br>
+								Telephone No: 87964400</br>
+								Email: mainoffice@usj.edu.mo</br>
+								</small>
+                                    </p>
+                                    <p>
+                                        <small>
+								Academic Records</br>
+								Telephone No:87964408</br>
+								Email: acadrecords@usj.edu.mo</br>
+								</small>
+                                    </p>
+                                    <p>
+                                        <small>
+								IT Office</br>
+								Telephone No: 87964555</br>
+								Email: itsupport@usj.edu.mo</br>
+								</small>
+
+
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-6">
+                    <h2 style="color:#fff">Send us Your Feedback</h2>
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="exampleInputName1">Your Name</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter name">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            <label for="exampleInputText1">Message</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-default">Send</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <a href="#" class="scrollup"><i class="fa fa-chevron-circle-up fa-3x"></i></a>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/jquery.stellar.min.js"></script>
+    <script src="assets/js/fancybox/jquery.fancybox.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $(function () {
+            $.stellar({
+                horizontalScrolling: false,
+                verticalOffset: 40
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            //    fancybox
+            jQuery(".fancybox").fancybox();
+        });
+    </script>
+    <script>
+        $(function () {
+            $('.social a').tooltip({
+                placement: "right",
+                container: 'body'
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 600) {
+                    $('.scrollup').fadeIn();
+                } else {
+                    $('.scrollup').fadeOut();
+                }
+            });
+            var navigation = $( "section#home" ).offset();
+      $('.scrollup').click(function () {
+          $("body").animate({
+              scrollTop: navigation.top - 200
+          }, 600);
+          return false;
+      });
+        });
+    </script>
+
+</body>
+
+</html>
